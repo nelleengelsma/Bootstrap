@@ -1,26 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Theme Simply Me</title>
+  <title>Pantone</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-    .bg-1 { 
-       background-color: #ffcccc;
-        color: #ffffff;
-    }
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  
+  .margin {margin-bottom: 45px;}
+  
+  .bg-1 {
+      background-color: white;
+      color: #555555;
+  }
+  
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+	
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+    
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+	  
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+	  
+  .navbar-nav  li a:hover {
+      color: #E78B90;
+  }  
+  .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+	  }
+ .container:hover .overlay-red{
+		  opacity: 1;
+	  }
+ .container:hover .overlay-orange{
+		  opacity: 1;
+	  }
+ .container:hover .overlay-yellow{
+		  opacity: 1;
+	  } 
+ .container:hover .overlay-green{
+		  opacity: 1;
+	  }
+ .container:hover .overlay-blue{
+		  opacity: 1;
+	  }
+ .container:hover .overlay-purple{
+		  opacity: 1;
+	  }
+
   </style>
 </head>
 <body>
 
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Pantone</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">BEHIND PANTONE</a></li>
+        <li><a href="#">COLOR THEORY</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
 <div class="container-fluid bg-1 text-center">
- <h3>Who Am I?</h3>
- <img src="https://i.pinimg.com/564x/63/1a/92/631a92bf6d184c26f0ced1cd3a648d69.jpg" class="img-circle" alt="Scorpion">
- <h3>I'm Nelle</h3>
+  <img src="https://i.pinimg.com/564x/15/81/6b/15816b760df7d3de8e8ac8bdded77e5f.jpg" class="img-responsive img-circle margin" style="display:inline" alt="pink" width="350" height="350">
+  <h3>Aesthetically pleasing collection of images; sorted on color</h3>
 </div>
-                               
+
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-4 container">
+      
+      <img src="https://i.pinimg.com/564x/ac/44/43/ac4443099628ea98c61e5e47a2c4ffa0.jpg" class="img-responsive margin" style="width:100%" alt="Red-Image">
+		<!--overlay rood-->
+		 <div class="overlay overlay-red">
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/d9/8a/50/d98a50346aec161ece3c805033b0de72.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/originals/1c/23/41/1c23416727360757871995887f958769.png" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/ff/c2/94/ffc294c51edc98faf6b4d958ed38109f.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/06/21/bc/0621bc09c94f44e75c91487fafa821db.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/7f/6c/0b/7f6c0b633023e690997bebd362a456fa.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/9e/de/77/9ede7712e59fbbd150d903c6c298c169.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/3f/63/8b/3f638bce443db46e5b409f813de1e474.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/4a/36/27/4a3627c05e7af052b41fc03e9036886d.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/c2/0e/2d/c20e2da014cee3085001fcb2f17a29e0.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+		 </div>
+	  </div>
+    <div class="col-sm-4 container">
+      
+      <img src="https://i.pinimg.com/564x/37/81/a3/3781a3a68948f327c3613b83c17d14d2.jpg" class="img-responsive margin" style="width:100%" alt="Orange-Image">
+		<!--overlay oranje-->
+		 <div class="overlay overlay-orange">
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/1c/8d/2e/1c8d2e4963fa1416af1ee08c0eaac533.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/aa/6d/1b/aa6d1be1861cbb135902ead80a7c8fe6.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/15/44/4e/15444e65b90f059b14db56dea222443c.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/19/80/1f/19801f630fbc7954a76bab36cab6c6b3.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/ec/26/84/ec2684c677524fbcf994bda75f061075.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/75/9e/25/759e25f54897eabed6d114131e4b392f.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/70/52/d2/7052d2c1e5183bd5bb9224332ee2c9a1.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/4b/26/4b/4b264bbe65f9d58e99151fd15142ac2b.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/c0/62/b1/c062b1afee0a02069610062886e26156.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+		 </div>
+    </div>
+    <div class="col-sm-4 container">
+      
+      <img src="https://i.pinimg.com/564x/d2/f7/24/d2f7247405c073aeefdbe55561e23f07.jpg" class="img-responsive margin" style="width:100%" alt="Yellow-Image">
+		<!--overlay geel-->
+		 <div class="overlay overlay-yellow">
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/e2/98/8f/e2988f02dc26301fe107e21e5de4ac0b.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/9e/d7/01/9ed7016bf280c30f51a921678f6915c1.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/2b/0a/0f/2b0a0fc8f5b2a27c9eb97ad999f04b5b.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/96/96/77/969677cc9158ca0ad1440494f56808e1.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/e0/7a/ea/e07aeaef4361f3fcb7ae428fdea6cc03.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/65/b0/69/65b06966549d9401aa34737dc0b996fa.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/16/6e/86/166e868c75a7afbf06d3ba2a57e36686.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/11/c1/17/11c11735f931100c3b11dd4f95c00974.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/19/e3/6a/19e36a8d032db5c5e16b3f66feeb6fae.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+		 </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 container">
+      
+      <img src="https://i.pinimg.com/564x/d0/e7/2d/d0e72d7daa68e7e9e1ef678ac4df4ba4.jpg" class="img-responsive margin" style="width:100%" alt="Green-Image">
+		<!--overlay groen-->
+		 <div class="overlay overlay-green">
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/6f/81/b0/6f81b0f2329325c04e6b389b8b68490b.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/89/88/b8/8988b8b16f082da582deed6639350fb2.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/be/58/c9/be58c902d80ee4fd85aba066964b10b1.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/0b/33/93/0b33938d7527247711fbc34a0e76541c.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/68/30/b5/6830b51afb5cec5d79143d2269da0afc.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/61/d0/bc/61d0bcd7dcdf60085a6cebc5c3837fb8.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/72/5b/e6/725be6be2234a9a4488414ba06daab45.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/3b/e0/b5/3be0b5bd43ab9f8325e8c0a81de14023.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/14/f0/b6/14f0b6b9dbf3b843443dccae4c513ced.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+		 </div>
+    </div>
+    <div class="col-sm-4 container">
+      
+      <img src="https://i.pinimg.com/564x/93/ad/aa/93adaac74f6f91d7ef1ed4c92e5b932d.jpg" class="img-responsive margin" style="width:100%" alt="Blue-Image">
+		<!--overlay blauw-->
+		 <div class="overlay overlay-blue">
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/12/44/54/12445414f2f525104412696ac7b56828.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/22/94/0b/22940be8cd66bcf46c15aa5333271972.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/91/88/18/9188187cf0bfc04690002682da63e41e.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/a7/58/11/a758114bc42f5d6c4c041cf0a6395238.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/ba/73/66/ba73663a6bf33fb6f30fc84e59d829c2.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/a8/65/04/a86504a3c8d9eb1445d318161ecfa4be.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/dd/cd/bb/ddcdbb7b24eb91b0b1eddc838b122d2c.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/f8/58/57/f858573e1d399f70b59030edc8494e3e.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/81/dd/17/81dd1760efb7bd6cbc45d59bddae126c.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+		 </div>
+    </div>
+    <div class="col-sm-4 container">
+      
+      <img src="https://i.pinimg.com/564x/d5/1b/2d/d51b2d422334cd553694f1271abbefea.jpg" class="img-responsive margin" style="width:100%" alt="Purple-Image">
+		<!--overlay paars-->
+		 <div class="overlay overlay-purple">
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/f6/7c/ff/f67cff9dcbf3bc3e8ca0d6880c2ba411.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/ca/e0/5b/cae05b97b96e2f156588bba8031b153c.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/b9/cc/70/b9cc703e2b3083fd831ba2814cc514a0.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/49/90/42/499042c44160533ccda48bb04bd6e66d.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/d2/ca/96/d2ca96a21ad16076763d242d389f74c3.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/32/64/04/326404ea3c5bd55f5ac6572ead263f77.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/89/6d/51/896d51f58879cff6c1a0dcc607b7f488.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/b5/be/ef/b5beef4e529b2d337a353fe4944b2adf.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+				 <div class="col-sm-4">
+					 <img src="https://i.pinimg.com/564x/6a/83/6c/6a836cf4e649eb4ff185bff0c80621a7.jpg" class="img-responsive" alt="red-image-overlay">
+				 </div>
+			 </div>
+		 </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>all images from Pinterest <a href="https://nl.pinterest.com/nelle_engelsma/">Nelle</a></p>
+</footer>
+
 </body>
 </html>
